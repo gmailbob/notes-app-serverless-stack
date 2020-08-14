@@ -1,0 +1,4 @@
+整个教程比较流畅。记录下容易出错的点：
+1.命令行中的换行符号 '\' 仅bash适用，windows上可以使用git bash
+2.Test the APIs（https://serverless-stack.com/chapters/test-the-apis.html）一节，test命令：windows要用cmd(而非powershell)执行下边写成一行的不带引号的命令，如果使用git bash则阅读下边common issues {status: 403}中相关部分
+3. .env不会上传git，仔细检查serverless.yml的environment部分可以知道程序期望.env包含什么k-v pairs
